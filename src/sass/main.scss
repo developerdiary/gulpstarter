@@ -1,0 +1,48 @@
+/* IMPORT CSS FILES */
+@import "_bootstrap";
+@import "_responsive";
+@import "_colors";
+@import "_typography";
+@import "_header";
+@import "_footer";
+@import "_sidebar";
+@import "_blog_listing";
+@import "_blog";
+
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+html {
+  background-color: $bgcolor;
+  color: $accent;
+}
+
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+/* Add a gray background color and some padding to the footer */
+footer {
+  background-color: $color1;
+  padding: 25px;
+}
+
+.carousel-inner img {
+  width: 100%; /* Set width to 100% */
+  margin: auto;
+  min-height:200px;
+}
+
+/* Hide the carousel text when the screen is less than 600 pixels wide */
+@media (max-width: 600px) {
+  .carousel-caption {
+      display: none; 
+  }
+}
+.carousel-caption p {
+  font-size: 14px;
+}
+.carousel-caption {
+  color: $color4;
+}
